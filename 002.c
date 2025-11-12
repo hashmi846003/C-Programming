@@ -4,14 +4,18 @@ int main(){
     int a;
     float f;
     double d;
-    printf("Size of char: %zu byte(s)\n", sizeof(ch));
-    printf("Size of int: %zu byte(s)\n", sizeof(a));
-    printf("Size of float: %zu byte(s)\n", sizeof(f));
-    printf("Size of double: %zu byte(s)\n", sizeof(d));
-    printf("%d\n", a);
-    printf("%f\n", f);
-    printf("%lf\n", d);
-    printf("%c\n", ch);        
-
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    printf("Enter an integer: ");
+    scanf("%d", &a);                       
+    printf("Enter a float: ");
+    scanf("%f", &f);
+    printf("Enter a double: ");
+    scanf("%lf", &d);
+    printf("You entered:\n");
+    printf("Character: %c\n", ch);
+    printf("Integer: %d\n", a);
+    printf("Float: %.2f\n", f);
+    printf("Double: %.2lf\n", d);
     return 0;
 }
