@@ -8,5 +8,10 @@ int main(){
     printf("Size of int: %zu byte(s)\n", sizeof(a));
     printf("Size of float: %zu byte(s)\n", sizeof(f));
     printf("Size of double: %zu byte(s)\n", sizeof(d));
+    printf("%d\n", a);
+    printf("%f\n", f);
+    printf("%lf\n", d);
+    printf("%c\n", ch);        
+
     return 0;
 }
