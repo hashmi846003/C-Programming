@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define the node structure
+// Insert at the end of a singly linked list
 struct Node {
     int data;
     struct Node* next;
@@ -26,10 +26,11 @@ int main() {
         newNode->next = NULL;
 
         if (head == NULL) {
-            head = newNode;  // first node becomes head
-            temp = head;
+            head = newNode;  
+            temp = newNode;// insertion at the end
+            
         } else {
-            temp->next = newNode;  // link previous node to current
+            temp->next = newNode;  
             temp = temp->next;
         }
     }
