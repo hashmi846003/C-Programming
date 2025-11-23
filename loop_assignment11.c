@@ -12,6 +12,7 @@ int main(){
           // j++;
         }
         //k++;
+        ch++;
         printf("\n");
         }
     return 0;
