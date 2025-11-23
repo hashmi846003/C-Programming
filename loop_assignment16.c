@@ -5,8 +5,8 @@ int main() {
     printf("Enter number of rows: ");   
     scanf("%d", &rows); 
 
-    int k = 1;  
-
+    //int k = 1;  
+    char ch='A';
     for (int i = rows; i >= 1; i--) {  
 
         
@@ -16,10 +16,10 @@ int main() {
 
         
         for (int j = 0; j < i; j++) {
-            printf("%d ", k);
-            k++;   
+            printf("%c ", ch);
+            //k++;   
         }
-        
+        ch++;
         printf("\n"); 
     }
 
