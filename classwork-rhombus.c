@@ -24,9 +24,9 @@ int main()
     for(i = rows - 1; i >= 1; i--)
     {
         
-        for(space = 1; space <= rows - i; space++)
+        for(space = 1; space <= rows - i; space++){
             printf(" ");
-
+        }
         
         for(j = 1; j <= 2*i - 1; j++)
             printf("*");
