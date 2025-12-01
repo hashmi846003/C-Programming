@@ -1,4 +1,4 @@
-// Find maxm np from an array
+// Find maxm no from an array
 #include<stdio.h>
 #include<stdlib.h>
 int main(){

@@ -9,6 +9,10 @@ int main(){
         scanf("%d",&array[i]);
     }
     for (int i=0;i<n;i++){
+        printf("%d\n",array[i]);
+    }
+    printf("\n");
+    for (int i=0;i<n;i++){
         if (array[i]%2==0){
             array[i]=0;
             printf("%d\n ", array[i]);
