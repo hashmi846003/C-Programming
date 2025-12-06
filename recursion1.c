@@ -1,0 +1,12 @@
+#include<stdio.h>
+void func (int num){
+    if (num>0){
+        func(--num);
+    }
+    printf("%d\n",num);
+}
+int main(){
+    int var=5;
+    func(var);
+    return 0;
+}
