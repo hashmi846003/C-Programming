@@ -10,7 +10,8 @@ int main(){
 
 }
 int func(){
-  static  int ret=10;
+    //volatile int ret=10;
+     static  int ret=10;
     ret=ret+2;
     return ret;
 }
