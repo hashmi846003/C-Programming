@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 WAP to find the square of array's elements using a function.
 
@@ -59,3 +60,16 @@ void square(int *arr, int size) {
         *(arr + i) = (*(arr + i)) * (*(arr + i));  
     }
 }
+=======
+#include<stdio.h>
+int main(){
+    int x=10;
+    char ch;
+    double d;
+    float f;
+    printf("%lu\n",sizeof(&x));
+    printf("%lu\n",sizeof(&ch));
+    printf("%lu\n",sizeof(&d));
+    printf("%lu\n",sizeof(&f));
+}
+>>>>>>> 83e84f5bba08c706b4861930fb74e4967f17692a

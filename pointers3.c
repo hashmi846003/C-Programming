@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*WAP to check if the system is little or big endian  
 
 1. Take a integer variable and store the value as 0x12345678
@@ -26,3 +27,26 @@ int main() {
     return 0;
 }
 
+=======
+#include<stdio.h>
+int main(){
+    int x=20,y=30;
+    int *ptr;
+    ptr=&x;
+    printf("%d\n",x);
+    printf("%d\n",y);
+    printf("%d\n",*ptr);
+    printf("%d\n",x);
+    ptr=&y;
+     printf("%d\n",x);
+    printf("%d\n",y);
+    printf("%d\n",*ptr);
+    printf("%d\n",y);
+    *ptr=18;
+      printf("%d\n",x);
+    printf("%d\n",y);
+    printf("%d\n",*ptr);
+    printf("%d",y);
+    
+}
+>>>>>>> 83e84f5bba08c706b4861930fb74e4967f17692a

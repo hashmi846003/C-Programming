@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*WAP to find the sum and product of two numbers
 
 Eg:
@@ -21,3 +22,16 @@ void sum_and_product(int *ptr1,int *ptr2){
 }
 
 
+=======
+#include<stdio.h>
+int main(){
+    int *ptr;
+    char *ptr1;
+    float *ptr2;
+    double *ptr3;
+    printf("%lu\n",sizeof(ptr));
+    printf("%lu\n",sizeof(ptr1));
+    printf("%lu\n",sizeof(ptr2));
+    printf("%lu\n",sizeof(ptr3));
+}
+>>>>>>> 83e84f5bba08c706b4861930fb74e4967f17692a
