@@ -1,32 +1,29 @@
 #include <stdio.h>
-
+int pallindrome(const char *);
 int main() {
     char str[100];
     int i = 0, j = 0, flag = 1;
 
-    printf("Enter a string: ");
-    scanf("%[^\n]", str);
-
-    
-    while (str[j] != '\0') {
-        j++;
-    }
-    j--;   
-
-    
-    while (i < j) {
-        if (str[i] != str[j]) {
-            flag = 0;
-            break;
-        }
-        i++;
-        j--;
-    }
-
-    if (flag)
-        printf("Palindrome string\n");
-    else
-        printf("Not a palindrome string\n");
-
-    return 0;
+printf("Enter a string: ");
+scanf("%[^\n]", str);
+int result = pallindrome(str);
+if(result)
+    printf("pallindrome\n");
+else
+    printf("not pallindrome");
+return 0;    
+}
+int pallindrome(const char *ptr){
+    int size=0;
+    while(ptr[size])
+    size++;
+   int start=0,end=size-1;
+   while(start<end)
+   {
+    if (ptr[start]!=ptr[end])
+        return 0;
+    start++;
+    end--;
+   } 
+   return 1;
 }
