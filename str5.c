@@ -1,14 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-<<<<<<< HEAD
-int main() {
-    char str1[] = "Hello, world!";
-    int len = strlen(str1);
-    for (int i = len-1; i >=0 ; i--) {
-        printf("%c", str1[i]);
-    }
-}
-=======
 int main(){
 char str1[]="Hello, how are you?";
 char str2[50];
@@ -21,4 +12,3 @@ str2[j]='\0';
 printf("Reversed string is: %s\n",str2);
 return 0;
 }
->>>>>>> master
