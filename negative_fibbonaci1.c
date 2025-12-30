@@ -16,21 +16,19 @@ int main()
     int n;
     scanf("%d", &n);
 
-    // Case 1: zero
+    
     if (n == 0)
     {
         printf("0");
         return 0;
     }
-
-    // Case 2: positive input
     if (n > 0)
     {
         printf("Invalid input");
         return 0;
     }
 
-    // Case 3: negative input
+    
     int limit = abs(n);
     int i = 0;
     int first = 1;
@@ -39,7 +37,7 @@ int main()
     {
         int val = fib(i);
 
-        // Apply negafibonacci sign rule
+        
         if (i % 2 != 0)
             val = -val;
 
