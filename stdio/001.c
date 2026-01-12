@@ -4,7 +4,7 @@ int main()
 {
     char ch;
     char str[]="EOF received";
-    while((ch=getchar()!=EOF)){
+    while((ch=getchar())!=EOF){
         putchar(toupper(ch));
     }
     puts(str);
