@@ -9,6 +9,7 @@ int main(){
     double y=7.2;
     ptr=&y;
     printf("%#hhx\n",*(char*)ptr);
+    printf("%lf\n",*(double*)(ptr));
     
 
 }
