@@ -5,6 +5,10 @@ int main(){
     ptr=&x;
     printf("%#hhx\n",*(char*)ptr);
     printf("%#hx\n",*(char*)(ptr+2));
-    printf("%x",*(int*)(ptr));
+    printf("%x\n",*(int*)(ptr));
+    double y=7.2;
+    ptr=&y;
+    printf("%#hhx\n",*(char*)ptr);
     
+
 }
