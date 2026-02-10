@@ -16,4 +16,5 @@ int main(){
         printf("%d",ptr2[i]);
     }
     free(ptr);
+    free(ptr2);
 }
