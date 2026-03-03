@@ -1,7 +1,4 @@
-/**
- * @file id3_reader.c
- * @brief Implementation of functions for reading ID3 tags from MP3 files.
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,18 +6,6 @@
 #include "id3_reader.h"
 #include "error_handling.h"
 
-
-/**
- * @brief Reads ID3v2 tags from the given MP3 file.
- *
- * This function opens the specified MP3 file, skips the 10-byte ID3v2 header,
- * and then reads six frames (TPE1, TIT2, TALB, TYER, TCON, TCOM). For each frame,
- * it extracts the frame ID, size, skips the flags, and reads the frame data.
- *
- * @param filename Path to the MP3 file.
- * @return Pointer to a TagData structure containing the extracted metadata,
- *         or NULL if an error occurs.
- */
 TagData* read_id3_tags(const char *filename) {
     FILE *fp = fopen(filename, "rb");
     if (!fp) {
