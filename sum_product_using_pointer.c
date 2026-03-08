@@ -1,5 +1,5 @@
 #include<stdio.h>
-void sum_and_prod(int,int,*int,*int);
+void sum_and_prod(int,int,int *,int *);
 int main(){
     int n1,n2;
     printf("Enter the two numbers\n");
